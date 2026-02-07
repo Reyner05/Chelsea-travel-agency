@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SkyWay Travel Agency</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <h1 class="logo">SkyWay ✈️</h1>
+    <nav>
+      <a href="#destinations">Destinations</a>
+      <a href="#book">Book Now</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Explore the World with Confidence</h2>
+    <p>Your journey starts here.</p>
+    <button onclick="scrollToBooking()">Book a Trip</button>
+  </section>
+
+  <!-- Destinations -->
+  <section id="destinations" class="destinations">
+    <h2>Popular Destinations</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Boracay</h3>
+        <p>White sand beaches & nightlife</p>
+      </div>
+      <div class="card">
+        <h3>Japan</h3>
+        <p>Culture, food & technology</p>
+      </div>
+      <div class="card">
+        <h3>Paris</h3>
+        <p>The city of love</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section id="book" class="booking">
+    <h2>Book Your Trip</h2>
+
+    <form id="bookingForm">
+      <input type="text" id="name" placeholder="Full Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <select id="destination" required>
+        <option value="">Choose Destination</option>
+        <option>Boracay</option>
+        <option>Japan</option>
+        <option>Paris</option>
+      </select>
+      <input type="date" required>
+      <button type="submit">Submit</button>
+    </form>
+
+    <p id="message"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <p>© 2026 SkyWay Travel Agency</p>
+    <p>Email: skywaytravel@email.com</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
